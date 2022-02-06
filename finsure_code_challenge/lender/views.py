@@ -12,6 +12,7 @@ from rest_framework.parsers import FileUploadParser, MultiPartParser, FormParser
 from rest_framework import status
 from django.http import HttpResponse
 from .parsers import CsvFileUploadParser
+from .paginations import LenderPagination
 # Create your views here.
 
 class LenderViewSet(viewsets.ModelViewSet):
@@ -20,6 +21,8 @@ class LenderViewSet(viewsets.ModelViewSet):
 
     serializer_class = LenderSerializer
     queryset = Lender.objects.all()
+    pagination_class = LenderPagination
+    http_method_names = ['get', 'post', 'put', 'delete', 'head', 'options']
 
 class CsvDownloadView(generics.ListAPIView):
     renderer_classes = [LenderCsvRenderer]
