@@ -1,0 +1,9 @@
+name,code,upfront_commission_rate,trial_commission_rate,active
+Jason He,jhe,0.3,0.4,True
+Rose Zhu,lzh,0.4,0.1,True
+Richard Johnson,rjo,0.4,0.34,True
+Tommy,tom,0.4,0.45,True
+Tommy junior,toj,0.3,0.43,False
+Chloe Wang,lxw,0.31,0.43,True
+Another Lender,ale,0.54,0.47,True
+Another Tommy senior,ats,0.52,0.63,True
