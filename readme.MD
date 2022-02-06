@@ -1,3 +1,6 @@
+## Language version  
+Python 3.8.8
+
 ## To start up the api application:
 
 1. fill out DB __username__ and __password__ file in below section in __settings.py__  
