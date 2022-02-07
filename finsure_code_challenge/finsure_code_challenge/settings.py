@@ -118,9 +118,9 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'lenders',
-        'USER': '',
-        'PASSWORD': '',
-        'HOST': 'localhost',
+        'USER': 'root',
+        'PASSWORD': 'root',
+        'HOST': '127.0.0.1',
         'PORT': '3306',
     }
 }
