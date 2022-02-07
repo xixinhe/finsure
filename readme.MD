@@ -3,21 +3,30 @@ Python 3.8.8
 
 ## To start up the api application:
 
-1. fill out DB __username__ and __password__ file in below section in __settings.py__  
+1. checkout repository from github  
+```
+git clone https://github.com/xixinhe/finsure_code_challenge.git
+```  
+  
+1. change DB config to your db configuration in below section in __PROJECT_ROOT/finsure_code_challenge/finsure_code_challenge/settings.py__  
 ```
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'lenders',
-        'USER': '',
-        'PASSWORD': '',
-        'HOST': 'localhost',
+        'USER': 'root',
+        'PASSWORD': 'root',
+        'HOST': '127.0.0.1',
         'PORT': '3306',
     }
 }
-```
-
-2. create virtual environment  
+```  
+  
+3. make sure there's a database __lenders__ on MariaDB, and user above has permission to modify it.
+  
+4. MariaDB connection requires __mysqlclient__ python lib to be installed. Before installing that, make sure you have installed the mysql client.  
+  
+2. go to __PROJECT_ROOT__, create virtual environment  
 ```
 python -m venv .venv
 ```  
@@ -27,7 +36,7 @@ python -m venv .venv
 pip install -r requirements.txt
 ```   
 
-4. migrate data  
+4. go to __PROJECT_ROOT/finsure_code_challenge__, setup database structure  
 ```
 python manage.py makemigrations
 python manage.py migrate
