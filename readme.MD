@@ -8,7 +8,7 @@ Python 3.8.8
 git clone https://github.com/xixinhe/finsure_code_challenge.git
 ```  
   
-1. change DB config to your db configuration in below section in __PROJECT_ROOT/finsure_code_challenge/finsure_code_challenge/settings.py__  
+2. change DB config to your db configuration in below section in __PROJECT_ROOT/finsure_code_challenge/finsure_code_challenge/settings.py__  
 ```
 DATABASES = {
     'default': {
@@ -26,28 +26,28 @@ DATABASES = {
   
 4. MariaDB connection requires __mysqlclient__ python lib to be installed. Before installing that, make sure you have installed the mysql client.  
   
-2. go to __PROJECT_ROOT__, create virtual environment  
+5. go to __PROJECT_ROOT__, create virtual environment  
 ```
 python -m venv .venv
 ```  
 
-3. install dependencies  
+6. install dependencies  
 ```
 pip install -r requirements.txt
 ```   
 
-4. go to __PROJECT_ROOT/finsure_code_challenge__, setup database structure  
+7. go to __PROJECT_ROOT/finsure_code_challenge__, setup database structure  
 ```
 python manage.py makemigrations
 python manage.py migrate
 ```  
 
-5. start up application  
+8. start up application  
 ```
 python manage.py runserver
 ```  
 
-6. browse to localhost:8000/lenders/  
+9. browse to localhost:8000/lenders/  
   
 ## API Description:
 
