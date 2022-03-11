@@ -7,7 +7,7 @@ Python 3.8.8
 
 1. checkout repository from github  
 ```
-git clone https://github.com/xixinhe/finsure_code_challenge.git
+git clone https://github.com/xixinhe/finsure.git
 ```  
   
 2. change DB config to your db configuration in below section in __PROJECT_ROOT/finsure_code_challenge/finsure_code_challenge/settings.py__  
